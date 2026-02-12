@@ -1,18 +1,23 @@
 import React from 'react';
+import logo from '../assets/t2k_logo.png';
+
 
 const Navbar = () => {
-    return (
-        <nav className="navbar glass-card">
-            <div className="container nav-content">
-                <div className="logo">Travel2Kukke</div>
-                <div className="nav-links">
-                    <a href="#hotels">Hotels</a>
-                    <a href="#cabs">Cabs</a>
-                    <a href="#places">Places</a>
-                    <button className="btn btn-primary">Book Now</button>
-                </div>
-            </div>
-            <style>{`
+  return (
+    <nav className="navbar glass-card">
+      <div className="container nav-content">
+        <div className="logo">
+          <img src={logo} alt="Travel2Kukke Logo" />
+          <span>Travel to Kukke</span>
+        </div>
+        <div className="nav-links">
+          <a href="#hotels">Hotels</a>
+          <a href="#cabs">Cabs</a>
+          <a href="#places">Places</a>
+          <button className="btn btn-primary">Book Now</button>
+        </div>
+      </div>
+      <style>{`
         .navbar {
           position: fixed;
           top: 1rem;
@@ -29,9 +34,17 @@ const Navbar = () => {
           align-items: center;
         }
         .logo {
-          font-size: 1.5rem;
-          font-weight: 800;
+          display: flex;
+          align-items: center;
+          gap: 0.8rem;
+          font-size: 1.25rem;
+          font-weight: 700;
           color: var(--primary-dark);
+          letter-spacing: -0.01em;
+        }
+        .logo img {
+          height: 36px;
+          display: block;
         }
         .nav-links {
           display: flex;
@@ -53,8 +66,8 @@ const Navbar = () => {
           }
         }
       `}</style>
-        </nav>
-    );
+    </nav>
+  );
 };
 
 export default Navbar;

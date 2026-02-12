@@ -15,6 +15,7 @@ function App() {
 
       <footer style={{ padding: '4rem 0', background: 'var(--primary-dark)', color: 'var(--white)', textAlign: 'center' }}>
         <div className="container">
+          <p>About Us</p>
           <p>© 2026 Travel2Kukke. All rights reserved.</p>
         </div>
       </footer>

@@ -1,13 +1,13 @@
 :root {
-  --primary: #2e7d32;
-  --primary-light: #60ad5e;
-  --primary-dark: #005005;
-  --secondary: #8d6e63;
-  --accent: #ffa000;
-  --background: #f1f8e9;
+  --primary: #ff8f00;
+  --primary-light: #ffc107;
+  --primary-dark: #e65100;
+  --secondary: #ff6f00;
+  --accent: #bf360c;
+  --background: #fff8e1;
   --surface: #ffffff;
-  --text-main: #1b5e20;
-  --text-muted: #558b2f;
+  --text-main: #3e2723;
+  --text-muted: #5d4037;
   --white: #ffffff;
   --glass: rgba(255, 255, 255, 0.8);
   --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
@@ -67,7 +67,7 @@ h1, h2, h3 {
 .btn-primary:hover {
   background: var(--primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.3);
+  box-shadow: 0 4px 12px rgba(230, 81, 0, 0.3);
 }
 
 section {
