@@ -8,7 +8,9 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-controlled.svg'],
+      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-controlled.svg'], // These are currently placeholders/to-be-added
+      // includeAssets: ['vite.svg'], // Simplified for initial build
+
       manifest: {
         name: 'Travel2Kukke',
         short_name: 'TravelKukke',
