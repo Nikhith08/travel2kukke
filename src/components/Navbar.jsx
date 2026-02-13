@@ -1,19 +1,43 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/t2k_logo.png';
 
 
 const Navbar = () => {
+  const location = useLocation();
+  const isHome = location.pathname === '/';
+
+  const scrollToSection = (id) => {
+    if (isHome) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <nav className="navbar glass-card">
       <div className="container nav-content">
-        <div className="logo">
+        <Link to="/" className="logo" style={{ textDecoration: 'none' }}>
           <img src={logo} alt="Travel2Kukke Logo" />
           <span>Travel to Kukke</span>
-        </div>
+        </Link>
         <div className="nav-links">
-          <a href="#hotels">Hotels</a>
-          <a href="#cabs">Cabs</a>
-          <a href="#places">Places</a>
+          {isHome ? (
+            <>
+              <a href="#hotels" onClick={(e) => { e.preventDefault(); scrollToSection('hotels'); }}>Hotels</a>
+              <a href="#cabs" onClick={(e) => { e.preventDefault(); scrollToSection('cabs'); }}>Cabs</a>
+              <a href="#places" onClick={(e) => { e.preventDefault(); scrollToSection('places'); }}>Places</a>
+            </>
+          ) : (
+            <>
+              <Link to="/#hotels">Hotels</Link>
+              <Link to="/#cabs">Cabs</Link>
+              <Link to="/#places">Places</Link>
+            </>
+          )}
+          <Link to="/about">About Us</Link>
           <button className="btn btn-primary">Book Now</button>
         </div>
       </div>
