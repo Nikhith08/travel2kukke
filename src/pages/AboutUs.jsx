@@ -14,7 +14,7 @@ const AboutUs = () => {
               <img src={devImg} alt="Nikhith Gowda" className="profile-image" />
             </div>
             <div className="profile-details">
-              <h1>Nikhith Gowda</h1>
+              <h1>Nikhith</h1>
               <p className="role">Software Developer</p>
               <div className="contact-info">
                 <p><strong>Email:</strong> <a href="mailto:mvnikhithgowda@gmail.com">mvnikhithgowda@gmail.com</a></p>
