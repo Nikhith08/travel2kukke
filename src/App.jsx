@@ -5,11 +5,13 @@ import Hero from './components/Hero';
 import Section from './components/Section';
 import AboutUs from './pages/AboutUs';
 import { hotels, cabs, places } from './data/mockData';
+import AdSlot from './components/AdSlot';
 
 const Home = () => (
   <>
     <Hero />
     <Section id="hotels" title="Premium Stays" items={hotels} type="hotel" />
+    <AdSlot adSlot="0987654321" />
     <Section id="cabs" title="Reliable Transport" items={cabs} type="cab" />
     <Section id="places" title="Places to Visit" items={places} type="place" />
   </>

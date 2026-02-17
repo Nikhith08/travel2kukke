@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import devImg from '../assets/dev_img.jpg';
+import AdSlot from '../components/AdSlot';
 
 const AboutUs = () => {
   return (
@@ -129,8 +130,10 @@ const AboutUs = () => {
           .profile-details h1 {
             font-size: 2.5rem;
           }
-        }
       `}</style>
+
+      {/* Google AdSense Slot */}
+      <AdSlot adSlot="1234567890" />
     </div>
   );
 };
